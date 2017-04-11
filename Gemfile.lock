@@ -1,0 +1,17 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    escort (0.4.0)
+      nesty
+    nesty (1.0.2)
+    taglib-ruby (0.7.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  escort
+  taglib-ruby
+
+BUNDLED WITH
+   1.13.6
