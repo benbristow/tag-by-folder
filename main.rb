@@ -22,6 +22,7 @@ Escort::App.create do |app|
       open_track(track_path) do |track, tag|
         if track_genre(track) != intended_genre(track_path)
           replace_genre(track, intended_genre(track_path))
+          changes += 1
         end
       end
     end
