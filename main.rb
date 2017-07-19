@@ -49,6 +49,6 @@ Escort::App.create do |app|
   def replace_genre(track, genre)
     track.tag.genre = genre
     track.save
-    puts "Set #{track.tag.title}'s genre to #{genre}"
+    puts "Set #{track.tag.artist} - #{track.tag.title}'s genre to #{genre}"
   end
 end
