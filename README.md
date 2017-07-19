@@ -13,3 +13,6 @@ bundle install
 chmod +x main.rb
 ./main.rb /path/to/my/mp3s
 ```
+## Known Issues
+
+* Does not save tags on GVFS (Samba) shares.
