@@ -14,7 +14,7 @@ Escort::App.create do |app|
     abort "Directory does not exist" unless File.directory?(directory)
 
     puts "> Scanning #{directory} for MP3 files and checking genres..."
-    track_paths = Dir.glob("#{directory}/**/*.mp3")
+    track_paths = Dir.glob("#{directory}/**/*.mp3").sort_by{ |f| File.ctime(f) }.reverse
     abort "No files in directory" if track_paths.empty?
 
     changes = 0
